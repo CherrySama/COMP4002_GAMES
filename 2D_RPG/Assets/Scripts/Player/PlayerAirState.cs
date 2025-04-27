@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerAirState : PlayerState
 {
     // Protection time after takeoff, ignoring ground detection
-    protected float airStateSafeTime = 0.1f; 
-    protected float airStateTimer;
+    protected float airStateCooldown = 0.1f; 
+    //protected float airStateTimer;
     public PlayerAirState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -13,7 +13,7 @@ public class PlayerAirState : PlayerState
     {
         base.Enter();
         // Reset the counter
-        airStateTimer = airStateSafeTime;
+        stateTimer = airStateCooldown;
     }
 
     public override void Exit()
@@ -29,12 +29,18 @@ public class PlayerAirState : PlayerState
         if (xInput != 0)
             player.SetVelocity(xInput * player.moveSpeed, player.rb.linearVelocityY);
 
-        airStateTimer -= Time.deltaTime;
+        //airStateTimer -= Time.deltaTime;
         // Only detect ground after the guard time has passed
-        if (airStateTimer <= 0 && player.IsGroundDetected())
+        if (stateTimer <= 0 && player.IsGroundDetected())
+        {
             stateMachine.ChangeState(player.idleState);
+            return;
+        }
 
-        if (player.IsWallDetected())
+        if (stateTimer <= 0 && player.IsWallDetected())
+        { 
             stateMachine.ChangeState(player.wallSlideState);
+            return;
+        }
     }
 }

@@ -24,12 +24,24 @@ public class PlayerWallSlideState : PlayerState
     {
         base.Update();
 
-        player.rb.linearVelocity = new Vector2(0.0f, player.rb.linearVelocityY * 0.9f);
+        player.rb.linearVelocity = new Vector2(0.0f, player.rb.linearVelocityY * 0.8f);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            stateMachine.ChangeState(player.wallJumpState);
+            return;
+        }
 
         if (xInput != 0 && player.facingDir * xInput < 0)
+        {
             stateMachine.ChangeState(player.idleState);
+            return;
+        }
 
         if (player.IsGroundDetected())
+        {
             stateMachine.ChangeState(player.idleState);
+            return;
+        }
     }
 }

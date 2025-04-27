@@ -9,9 +9,6 @@ public class PlayerGroundState : PlayerState
     public override void Enter()
     {
         base.Enter();
-
-        // Reset horizontal speed to prevent sliding
-        player.SetVelocity(0, player.rb.linearVelocity.y);
     }
 
     public override void Exit()
@@ -23,7 +20,22 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
 
+        if (Input.GetKeyDown(KeyCode.J)) 
+        {
+            stateMachine.ChangeState(player.primaryAttack);
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && player.IsGroundDetected())
+        {
             stateMachine.ChangeState(player.jumpState);
+            return;
+        }
+
+        if (!player.IsGroundDetected())
+        {
+            stateMachine.ChangeState(player.airState);
+            return;
+        }
     }
 }

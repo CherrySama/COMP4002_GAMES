@@ -301,8 +301,9 @@ GameObject:
   - component: {fileID: 325867152}
   - component: {fileID: 325867154}
   - component: {fileID: 325867155}
-  - component: {fileID: 325867157}
   - component: {fileID: 325867158}
+  - component: {fileID: 325867157}
+  - component: {fileID: 325867159}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -373,8 +374,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325867151}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.52, y: 1.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.57, y: 0.18, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -458,8 +459,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f120481c8a22f949b7a390e45d136b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackMovement:
+  - {x: 1, y: 2}
+  - {x: 2, y: 1}
+  - {x: 2, y: 3}
+  - {x: 3, y: 2}
+  attackSpeed: 1.1
   moveSpeed: 8
   jumpForce: 12
+  dashCooldown: 1
+  dashSpeed: 20
+  dashDuration: 0.4
   groundCheck: {fileID: 1329081094}
   groundCheckDistance: 0.125
   wallCheck: {fileID: 10499819}
@@ -489,6 +499,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &325867159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325867151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebca65b17891a164d8cb30561886cd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &500329232
 GameObject:
   m_ObjectHideFlags: 0
