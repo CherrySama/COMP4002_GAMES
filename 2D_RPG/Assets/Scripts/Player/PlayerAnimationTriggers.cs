@@ -8,4 +8,9 @@ public class PlayerAnimationTriggers : MonoBehaviour
     {
         player.AnimationTrigger();
     }
+
+    public void LadderClimbFinished()
+    {
+        player.AnimationTrigger();
+    }
 }

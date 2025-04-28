@@ -3,56 +3,32 @@
   "WorkspaceRootPath": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\enemy\\wizard\\wizardmovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\wizard\\wizardmovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\enemy\\wizard\\wiazrdidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\wizard\\wiazrdidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\enemy\\enemy_wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy_wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\enemy\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerwallslidestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerwallslidestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\assets\\scripts\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyState.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\EnemyState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyState.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\EnemyState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T22:41:48.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WiazrdIdleState.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Wizard\\WiazrdIdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Wizard\\WiazrdIdleState.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Wizard\\WiazrdIdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Wizard\\WiazrdIdleState.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T22:39:31.958Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -71,164 +73,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerAnimationTriggers.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "WizardMoveState.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Wizard\\WizardMoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Wizard\\WizardMoveState.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Wizard\\WizardMoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Wizard\\WizardMoveState.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:05:04.121Z",
+              "WhenOpened": "2025-04-28T22:39:24.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerPrimaryAttack.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBgAAAA3AAAAAAAAAA==",
+              "Title": "Enemy_Wizard.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Enemy_Wizard.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy_Wizard.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Enemy_Wizard.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy_Wizard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:35:12.279Z",
+              "WhenOpened": "2025-04-28T22:27:44.092Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerWallJumpState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerWallJumpState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerWallJumpState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerWallJumpState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerWallJumpState.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:04:46.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerWallSlideState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerWallSlideState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerWallSlideState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerWallSlideState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerWallSlideState.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwB8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T22:33:11.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerDashState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerDashState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerDashState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerDashState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerDashState.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA1wCQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:41:03.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerJumpState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T18:24:59.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PlayerGroundState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerGroundState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerGroundState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerGroundState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerGroundState.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T18:05:57.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerAirState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerAirState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAirState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerAirState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAirState.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T18:24:57.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerIdleState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerIdleState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerIdleState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerIdleState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerIdleState.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T15:43:42.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayerMoveState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwAIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T15:37:48.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStateMachine.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStateMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T15:17:40.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerState.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T15:17:36.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
               "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAE0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAowEYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:18:34.851Z",
+              "WhenOpened": "2025-04-28T21:55:39.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Entity.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Entity.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Entity.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwC0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:52:31.293Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:33:24.513Z"
             }
           ]
         }

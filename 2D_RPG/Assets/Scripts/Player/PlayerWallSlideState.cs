@@ -13,6 +13,7 @@ public class PlayerWallSlideState : PlayerState
         // Make sure to force reset Jump parameters
         // to resolve animation conflicts
         player.anim.SetBool("Jump", false);
+        player.hasDoubleJumped = false;
     }
 
     public override void Exit()
@@ -41,6 +42,18 @@ public class PlayerWallSlideState : PlayerState
         if (player.IsGroundDetected())
         {
             stateMachine.ChangeState(player.idleState);
+            return;
+        }
+
+        if (Input.GetAxisRaw("Vertical") != 0 && player.IsLadderDetected())
+        {
+            stateMachine.ChangeState(player.ladderClimbState);
+            return;
+        }
+
+        if (Input.GetAxisRaw("Vertical") == 0 && player.IsLadderDetected())
+        {
+            stateMachine.ChangeState(player.airState);
             return;
         }
     }

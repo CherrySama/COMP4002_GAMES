@@ -9,6 +9,9 @@ public class PlayerGroundState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        // 当角色着地时重置二段跳状态
+        player.hasDoubleJumped = false;
     }
 
     public override void Exit()
@@ -35,6 +38,12 @@ public class PlayerGroundState : PlayerState
         if (!player.IsGroundDetected())
         {
             stateMachine.ChangeState(player.airState);
+            return;
+        }
+
+        if (Input.GetAxisRaw("Vertical") > 0 && player.IsLadderDetected())
+        {
+            stateMachine.ChangeState(player.ladderClimbState);
             return;
         }
     }

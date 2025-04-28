@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Player : MonoBehaviour
+public class Player : Entity
 {
     [Header("Attack Details")]
     public Vector2[] attackMovement;
@@ -11,31 +11,19 @@ public class Player : MonoBehaviour
     [Header("Move Info")]
     public float moveSpeed = 12.0f;
     public float jumpForce = 12.0f;
+    public bool canDoubleJump = true; // 控制是否启用二段跳
+    public float doubleJumpForce = 10.0f; // 二段跳的力度，可以略小于第一段跳跃
+    private bool _hasDoubleJumped = false; // 跟踪是否已经使用了二段跳
 
     [Header("Dash Info")]
     [SerializeField] private float dashCooldown;
     private float dashUsageTimer;
     public float dashSpeed;
     public float dashDuration;
+
     public float dashDir {  get; private set; }
 
-    [Header("Collision Info")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckDistance;
-    [SerializeField] private Transform wallCheck;
-    [SerializeField] private float wallCheckDistance;
-    [SerializeField] private LayerMask WhatIsGround;
-
     public bool isBusy { get; private set; }
-
-    public int facingDir { get; private set; } = 1;
-    private bool facingRight = true;
-
-    #region Components
-    public Animator anim {  get; private set; }
-    
-    public Rigidbody2D rb { get; private set; }
-    #endregion
 
     #region State Lists
     public PlayerStateMachine stateMachine {  get; private set; }
@@ -47,12 +35,15 @@ public class Player : MonoBehaviour
     public PlayerWallSlideState wallSlideState {  get; private set; }
     public PlayerWallJumpState wallJumpState { get; private set; }
     public PlayerDashState dashState { get; private set; }
-    
+    public PlayerLadderClimbState ladderClimbState { get; private set; }
+    public PlayerLadderClimbFinishState ladderClimbFinishState { get; private set; }
+
     public PlayerPrimaryAttack primaryAttack { get; private set; }
     #endregion
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         stateMachine = new PlayerStateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
@@ -62,23 +53,31 @@ public class Player : MonoBehaviour
         wallSlideState = new PlayerWallSlideState(this, stateMachine, "WallSlide");
         wallJumpState = new PlayerWallJumpState(this, stateMachine, "WallJump");
         dashState = new PlayerDashState(this, stateMachine, "Dash");
+        ladderClimbState = new PlayerLadderClimbState(this, stateMachine, "LadderClimb");
+        ladderClimbFinishState = new PlayerLadderClimbFinishState(this, stateMachine, "LadderClimbFinish");
+
 
         primaryAttack = new PlayerPrimaryAttack(this, stateMachine, "Attack");
     }
 
-    private void Start()
+    protected override void Start()
     {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-
+        base.Start();
         stateMachine.Initialize(idleState);
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         stateMachine.currentState.Update();
 
         CheckForDashInput();
+    }
+
+    public bool hasDoubleJumped
+    {
+        get { return _hasDoubleJumped; }
+        set { _hasDoubleJumped = value; }
     }
 
     public IEnumerator BusyFor(float _seconds)
@@ -112,71 +111,5 @@ public class Player : MonoBehaviour
 
             stateMachine.ChangeState(dashState);
         }
-    }
-    public void SetVelocity(float _xVelocity, float _yVelocity)
-    {
-        rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
-        FlipController(_xVelocity);
-    }
-
-    public bool IsGroundDetected()
-    {
-        //bool result = Physics2D.Raycast(groundCheck.position,
-        //                                Vector2.down,
-        //                                groundCheckDistance,
-        //                                WhatIsGround);
-        bool result = Physics2D.BoxCast(groundCheck.position,
-                                        new Vector2(0.5f, 0.2f), 
-                                        0f, 
-                                        Vector2.down,
-                                        groundCheckDistance,
-                                        WhatIsGround);
-        //Debug.Log("Ground Detected: " + result);
-        return result;
-    }
-
-    public bool IsWallDetected()
-    {
-        bool result = Physics2D.Raycast(wallCheck.position,
-                                        Vector2.right * facingDir,
-                                        wallCheckDistance,
-                                        WhatIsGround);
-
-        return result;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(groundCheck.position, 
-                        new Vector3(groundCheck.position.x, 
-                                    groundCheck.position.y - groundCheckDistance));
-        Gizmos.DrawLine(wallCheck.position,
-                        new Vector3(wallCheck.position.x + wallCheckDistance,
-                                    wallCheck.position.y));
-
-        // 使用不同颜色显示检测结果
-        if (Application.isPlaying)
-        {
-            Gizmos.color = IsGroundDetected() ? Color.green : Color.red;
-            Gizmos.DrawWireCube(
-                new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance / 2, 0),
-                new Vector3(0.4f, groundCheckDistance, 0.1f)
-            );
-        }
-    }
-
-    public void Flip()
-    {
-        facingDir *= -1;
-        facingRight = !facingRight;
-        transform.Rotate(0.0f, 180.0f, 0.0f);
-    }
-
-    public void FlipController(float _x)
-    {
-        if (_x > 0.0f && !facingRight)
-            Flip();
-        else if (_x < 0.0f && facingRight)
-            Flip();
     }
 }

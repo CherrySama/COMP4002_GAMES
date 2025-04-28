@@ -11,7 +11,8 @@ public class PlayerIdleState : PlayerGroundState
         base.Enter();
 
         // Reset horizontal speed to prevent sliding
-        player.rb.linearVelocity = new Vector2(0, 0);
+        //player.rb.linearVelocity = new Vector2(0, 0);
+        player.SetVelocity(0, 0);
     }
 
     public override void Exit()
