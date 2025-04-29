@@ -15,6 +15,8 @@ public class PlayerPrimaryAttack : PlayerState
     {
         base.Enter();
 
+        //xInput = 0; // need this to fix the bug on attacking
+
         if (comboCounter > 3 || Time.time >= lastTimeAttacked + comboWindow)
             comboCounter = 0;
 

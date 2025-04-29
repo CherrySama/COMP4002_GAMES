@@ -1,12 +1,10 @@
 using UnityEngine;
 
-public class WiazrdIdleState : EnemyState
+public class WiazrdIdleState : WizardGroundState
 {
-    private Enemy_Wizard enemy;
-
-    public WiazrdIdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Wizard _enemy) : base(_enemy, _stateMachine, _animBoolName)
+    public WiazrdIdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Wizard _enemy) : base(_enemyBase, _stateMachine, _animBoolName, _enemy)
     {
-        enemy = _enemy;
+        this.enemy = _enemy;
     }
 
     public override void Enter()
@@ -27,5 +25,8 @@ public class WiazrdIdleState : EnemyState
 
         if (stateTimer < 0)
             stateMachine.ChangeState(enemy.moveState);
+
+        //if (enemy.IsPlayerDetected())
+        //    stateMachine.ChangeState(enemy.battleState);
     }
 }

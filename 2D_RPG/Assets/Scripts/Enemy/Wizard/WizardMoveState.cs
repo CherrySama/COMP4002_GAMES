@@ -1,10 +1,8 @@
 using UnityEngine;
 
-public class WizardMoveState : EnemyState
+public class WizardMoveState : WizardGroundState
 {
-    private Enemy_Wizard enemy;
-
-    public WizardMoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Wizard _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+    public WizardMoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Wizard _enemy) : base(_enemyBase, _stateMachine, _animBoolName, _enemy)
     {
         this.enemy = _enemy;
     }
@@ -30,5 +28,8 @@ public class WizardMoveState : EnemyState
             enemy.Flip();
             stateMachine.ChangeState(enemy.idleState);
         }
+
+        //if (enemy.IsPlayerDetected())
+        //    stateMachine.ChangeState(enemy.battleState);
     }
 }

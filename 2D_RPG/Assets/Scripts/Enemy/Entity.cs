@@ -1,8 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
 public class Entity : MonoBehaviour
 {
     [Header("Collision Info")]
+    public Transform attackCheck;
+    public float attackCheckRadius;
     [SerializeField] protected Transform groundCheck;
     [SerializeField] protected float groundCheckDistance;
     [SerializeField] protected Transform wallCheck;
@@ -11,11 +14,13 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform ladderCheck;
     [SerializeField] protected float ladderCheckDistance;
     [SerializeField] protected LayerMask whatIsLadder;
-
+    
     #region Components
     public Animator anim { get; private set; }
 
     public Rigidbody2D rb { get; private set; }
+
+    public CharacterStats stats { get; private set; }
     #endregion
 
     public int facingDir { get; private set; } = 1;
@@ -30,6 +35,7 @@ public class Entity : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<CharacterStats>();
     }
 
     protected virtual void Update()
@@ -42,6 +48,11 @@ public class Entity : MonoBehaviour
         rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
         FlipController(_xVelocity);
     }
+
+    //public virtual void Damage()
+    //{
+    //    Debug.Log(gameObject.name + " was damaged!");
+    //}
 
     #region Collision
     public virtual bool IsGroundDetected()
@@ -92,6 +103,7 @@ public class Entity : MonoBehaviour
         Gizmos.DrawLine(ladderCheck.position,
                 new Vector3(ladderCheck.position.x,
                             ladderCheck.position.y + ladderCheckDistance));
+        Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
 
         // Use different colors to display the test results
         if (Application.isPlaying)

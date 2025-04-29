@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Interfaces;
 
 public class Player : Entity
 {
@@ -21,7 +22,12 @@ public class Player : Entity
     public float dashSpeed;
     public float dashDuration;
 
+    [Header("Stunning Info ")]
+    public float stunDuration;
+
     public float dashDir {  get; private set; }
+
+    public bool isHit = false;
 
     public bool isBusy { get; private set; }
 
@@ -37,6 +43,7 @@ public class Player : Entity
     public PlayerDashState dashState { get; private set; }
     public PlayerLadderClimbState ladderClimbState { get; private set; }
     public PlayerLadderClimbFinishState ladderClimbFinishState { get; private set; }
+    public PlayerStunState stunState { get; private set; }
 
     public PlayerPrimaryAttack primaryAttack { get; private set; }
     #endregion
@@ -55,7 +62,7 @@ public class Player : Entity
         dashState = new PlayerDashState(this, stateMachine, "Dash");
         ladderClimbState = new PlayerLadderClimbState(this, stateMachine, "LadderClimb");
         ladderClimbFinishState = new PlayerLadderClimbFinishState(this, stateMachine, "LadderClimbFinish");
-
+        stunState = new PlayerStunState(this, stateMachine, "Stun");
 
         primaryAttack = new PlayerPrimaryAttack(this, stateMachine, "Attack");
     }
@@ -70,6 +77,12 @@ public class Player : Entity
     {
         base.Update();
         stateMachine.currentState.Update();
+
+        if (isHit)
+        {
+            stateMachine.ChangeState(stunState);
+            return;
+        }
 
         CheckForDashInput();
     }
@@ -88,6 +101,13 @@ public class Player : Entity
 
         isBusy = false;
     }
+
+    public virtual void Damage()
+    {
+        isHit = true;
+        //Debug.Log(gameObject.name + " was damaged!");
+    }
+
 
     public void AnimationTrigger()
     {
