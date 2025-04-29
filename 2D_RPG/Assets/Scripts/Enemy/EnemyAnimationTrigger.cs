@@ -16,8 +16,12 @@ public class EnemyAnimationTrigger : MonoBehaviour
         foreach (var hit in colliders)
         {
             if (hit.GetComponent<Player>() != null)
+            {
                 hit.GetComponent<Player>().Damage();
                 //Debug.Log(hit.GetComponent<Player>().name + " was damaged!");
+                PlayerStat target = hit.GetComponent<PlayerStat>();
+                enemy.stats.DoDamage(target);
+            }
         }
     }
 

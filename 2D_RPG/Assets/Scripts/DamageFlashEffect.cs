@@ -21,7 +21,7 @@ public class DamageFlashEffect : MonoBehaviour
             Destroy(gameObject);
 
         // 确保在场景切换时不被销毁
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         // 初始时隐藏
         flashImage.color = new Color(flashColor.r, flashColor.g, flashColor.b, 0);
