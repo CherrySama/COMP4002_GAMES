@@ -8,6 +8,7 @@ public class Enemy_Wizard : Enemy
     public WizardBattleState battleState { get; private set; }
     public WizardAttackState attackState { get; private set; }
     public WizardStunState stunState { get; private set; }
+    public WizardDeadState deadState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -19,6 +20,7 @@ public class Enemy_Wizard : Enemy
         battleState = new WizardBattleState(this, stateMachine, "Move", this);
         attackState = new WizardAttackState(this, stateMachine, "Attack", this);
         stunState = new WizardStunState(this, stateMachine, "Stun", this);
+        deadState = new WizardDeadState(this, stateMachine, "Idle", this);
     }
 
     protected override void Start()
@@ -37,5 +39,11 @@ public class Enemy_Wizard : Enemy
             stateMachine.ChangeState(stunState);
             return;
         }
+    }
+
+    public override void Die()
+    {
+        base.Die();
+        stateMachine.ChangeState(deadState);
     }
 }

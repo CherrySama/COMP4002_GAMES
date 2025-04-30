@@ -44,9 +44,12 @@ public class Player : Entity
     public PlayerLadderClimbState ladderClimbState { get; private set; }
     public PlayerLadderClimbFinishState ladderClimbFinishState { get; private set; }
     public PlayerStunState stunState { get; private set; }
-
+    public PlayerDeadState deadState { get; private set; }
+    public PlayerUIState uiState { get; private set; }
     public PlayerPrimaryAttack primaryAttack { get; private set; }
     #endregion
+
+    public UIController uiController { get; private set; }
 
     protected override void Awake()
     {
@@ -63,6 +66,8 @@ public class Player : Entity
         ladderClimbState = new PlayerLadderClimbState(this, stateMachine, "LadderClimb");
         ladderClimbFinishState = new PlayerLadderClimbFinishState(this, stateMachine, "LadderClimbFinish");
         stunState = new PlayerStunState(this, stateMachine, "Stun");
+        deadState = new PlayerDeadState(this, stateMachine, "Die");
+        uiState = new PlayerUIState(this, stateMachine, "UI");
 
         primaryAttack = new PlayerPrimaryAttack(this, stateMachine, "Attack");
     }
@@ -71,6 +76,7 @@ public class Player : Entity
     {
         base.Start();
         stateMachine.Initialize(idleState);
+        uiController = FindFirstObjectByType<UIController>();
     }
 
     protected override void Update()
@@ -131,5 +137,12 @@ public class Player : Entity
 
             stateMachine.ChangeState(dashState);
         }
+    }
+
+    public override void Die()
+    {
+        base.Die();
+
+        //stateMachine.ChangeState(deadState);
     }
 }

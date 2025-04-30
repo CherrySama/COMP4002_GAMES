@@ -32,6 +32,11 @@ public class PlayerState
 
         xInput = Input.GetAxisRaw("Horizontal");
         player.anim.SetFloat("yVelocity", player.rb.linearVelocityY);
+
+        if (player.isDead)
+            stateMachine.ChangeState(player.deadState);
+        if (Input.GetKeyDown(KeyCode.U))
+            stateMachine.ChangeState(player.uiState);
         //Debug.Log("I'm in " + animBoolName);
     }
 

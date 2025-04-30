@@ -28,19 +28,22 @@ public class WizardBattleState : EnemyState
     {
         base.Update();
 
-        //Debug.Log(Check());
-        if (enemy.IsPlayerDetected().distance < enemy.attackDistance &&
-            Mathf.Abs(player.transform.position.y - enemy.transform.position.y) > 1f)
+        if (enemy.IsPlayerDetected())
         {
-            if (CanIAttack())
+            //Debug.Log(Check());
+            if (enemy.IsPlayerDetected().distance < enemy.attackDistance &&
+                Mathf.Abs(player.transform.position.y - enemy.transform.position.y) > 1f)
             {
-                stateMachine.ChangeState(enemy.attackState);
-                return;
-            }
-            else
-            {
-                enemy.SetVelocity(0, 0);
-                return;
+                if (CanIAttack())
+                {
+                    stateMachine.ChangeState(enemy.attackState);
+                    return;
+                }
+                else
+                {
+                    enemy.SetVelocity(0, 0);
+                    return;
+                }
             }
         }
 

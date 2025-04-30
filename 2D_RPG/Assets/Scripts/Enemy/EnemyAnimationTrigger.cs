@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyAnimationTrigger : MonoBehaviour
 {
     private Enemy_Wizard enemy => GetComponent<Enemy_Wizard>();
+    
 
     private void AnimationTrigger()
     {
@@ -17,12 +18,17 @@ public class EnemyAnimationTrigger : MonoBehaviour
         {
             if (hit.GetComponent<Player>() != null)
             {
-                hit.GetComponent<Player>().Damage();
+                //hit.GetComponent<Player>().Damage();
                 //Debug.Log(hit.GetComponent<Player>().name + " was damaged!");
                 PlayerStat target = hit.GetComponent<PlayerStat>();
                 enemy.stats.DoDamage(target);
             }
         }
+    }
+
+    private void GiveEXP()
+    {
+
     }
 
     private void OpenWarningWindow()

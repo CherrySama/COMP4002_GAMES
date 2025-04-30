@@ -26,6 +26,7 @@ public class Enemy : Entity
 
     public bool isHit = false;
     public Vector2 lastHitDirection;
+    public string lastAnimBoolName {  get; private set; }
     //public Transform playerTransform;
 
     protected override void Awake()
@@ -41,6 +42,11 @@ public class Enemy : Entity
 
         stateMachine.currentState.Update();
         //Debug.Log(IsPlayerDetected().collider.gameObject.name);
+    }
+
+    public virtual void AssignLastName(string _animBoolName)
+    {
+        lastAnimBoolName = _animBoolName;
     }
 
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();

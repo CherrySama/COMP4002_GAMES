@@ -21,10 +21,15 @@ public class Entity : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
 
     public CharacterStats stats { get; private set; }
+
+    public CapsuleCollider2D cd { get; private set; }
     #endregion
 
     public int facingDir { get; private set; } = 1;
     protected bool facingRight = true;
+    public bool isDead { get; private set; } = false;
+
+    public System.Action onFlipped;
 
     protected virtual void Awake()
     {
@@ -36,6 +41,7 @@ public class Entity : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         stats = GetComponent<CharacterStats>();
+        cd = GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void Update()
@@ -129,6 +135,8 @@ public class Entity : MonoBehaviour
         facingDir *= -1;
         facingRight = !facingRight;
         transform.Rotate(0.0f, 180.0f, 0.0f);
+        
+        onFlipped?.Invoke();
     }
 
     public virtual void FlipController(float _x)
@@ -139,4 +147,9 @@ public class Entity : MonoBehaviour
             Flip();
     }
     #endregion
+
+    public virtual void Die()
+    {
+        isDead = true;
+    }
 }
