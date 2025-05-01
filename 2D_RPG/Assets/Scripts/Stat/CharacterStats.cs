@@ -52,7 +52,7 @@ public class CharacterStats : MonoBehaviour
         if (ignitedDamageTimer < 0 && isIgnited)
         {
             TakeDamage(1);
-            Debug.Log("Take burn damage");
+            //Debug.Log("Take burn damage");
             ignitedDamageTimer = ignitedDamageCooldown;
         }
     }

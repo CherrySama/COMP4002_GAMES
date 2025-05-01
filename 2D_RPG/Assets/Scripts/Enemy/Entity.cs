@@ -14,7 +14,10 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform ladderCheck;
     [SerializeField] protected float ladderCheckDistance;
     [SerializeField] protected LayerMask whatIsLadder;
-    
+    //[SerializeField] protected Transform spikesCheck;
+    //[SerializeField] protected float spikesCheckDistance;
+    [SerializeField] protected LayerMask whatIsSpike;
+
     #region Components
     public Animator anim { get; private set; }
 
@@ -38,7 +41,11 @@ public class Entity : MonoBehaviour
 
     protected virtual void Start()
     {
+
         anim = GetComponent<Animator>();
+        // 确保动画组件已准备好
+        //if (anim == null)
+        //    anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         stats = GetComponent<CharacterStats>();
         cd = GetComponent<CapsuleCollider2D>();
@@ -95,6 +102,22 @@ public class Entity : MonoBehaviour
                                         Vector2.up,
                                         ladderCheckDistance,
                                         whatIsLadder);
+        return result;
+    }
+
+    public virtual bool IsSpikesDetected()
+    {
+        //bool result = Physics2D.Raycast(groundCheck.position,
+        //                                Vector2.down,
+        //                                groundCheckDistance,
+        //                                WhatIsGround);
+        bool result = Physics2D.BoxCast(groundCheck.position,
+                                        new Vector2(0.5f, 0.2f),
+                                        0f,
+                                        Vector2.down,
+                                        groundCheckDistance,
+                                        whatIsSpike);
+        //Debug.Log("Ground Detected: " + result);
         return result;
     }
 

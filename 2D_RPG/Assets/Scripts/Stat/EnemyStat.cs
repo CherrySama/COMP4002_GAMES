@@ -3,11 +3,15 @@ using UnityEngine;
 public class EnemyStat : CharacterStats
 {
     private Enemy enemy;
+    //private PlayerStat player;
     protected override void Start()
     {
         base.Start();
 
         enemy = GetComponent<Enemy>();
+        //player = GameObject.Find("Player").GetComponent<PlayerStat>();
+        //if (player == null)
+        //    Debug.Log("111");
     }
 
     public override void TakeDamage(int _damage, Vector2 _playerPos)
@@ -22,6 +26,7 @@ public class EnemyStat : CharacterStats
         base.Die();
         if (LVup.Instance != null)
             LVup.Instance.PlayFlash();
+        //player.LVup();
         enemy.Die();
     }
 }

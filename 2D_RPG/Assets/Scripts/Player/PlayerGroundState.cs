@@ -46,5 +46,11 @@ public class PlayerGroundState : PlayerState
             stateMachine.ChangeState(player.ladderClimbState);
             return;
         }
+
+        if (player.IsSpikesDetected())
+        {
+            stateMachine.ChangeState(player.stunState);
+            return;
+        }
     }
 }

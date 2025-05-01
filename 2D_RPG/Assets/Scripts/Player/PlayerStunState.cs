@@ -12,6 +12,8 @@ public class PlayerStunState : PlayerState
 
         stateTimer = player.stunDuration;
 
+        AudioManager.Instance.PlaySFX("Hit");
+
         if (DamageFlashEffect.Instance != null)
             DamageFlashEffect.Instance.PlayFlash();
     }
@@ -21,6 +23,7 @@ public class PlayerStunState : PlayerState
         base.Exit();
 
         player.isHit = false;
+        AudioManager.Instance.StopSFX("Hit");
     }
 
     public override void Update()

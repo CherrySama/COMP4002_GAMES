@@ -27,7 +27,6 @@ public class HitDamageShown : MonoBehaviour
 
     public void PlayFlash()
     {
-        Debug.Log("111");
         // 停止正在进行的闪烁
         if (flashCoroutine != null)
             StopCoroutine(flashCoroutine);

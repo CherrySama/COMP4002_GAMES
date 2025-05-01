@@ -11,6 +11,7 @@ public class PlayerUIState : PlayerState
         base.Enter();
 
         player.uiController.ShowUI();
+        AudioManager.Instance.PlaySFX("UI");
     }
 
     public override void Exit()
@@ -18,6 +19,7 @@ public class PlayerUIState : PlayerState
         base.Exit();
 
         player.uiController.HideUI();
+        AudioManager.Instance.StopSFX("UI");
     }
 
     public override void Update()

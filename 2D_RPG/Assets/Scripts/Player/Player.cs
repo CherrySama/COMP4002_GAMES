@@ -54,6 +54,7 @@ public class Player : Entity
     protected override void Awake()
     {
         base.Awake();
+
         stateMachine = new PlayerStateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
@@ -75,13 +76,58 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
+
+        //// 新增：强制清理动画系统
+        //StartCoroutine(ResetAnimationSystem());
+
+        // 等待一帧再初始化状态机，确保所有组件都已加载
+        //StartCoroutine(DelayedStateInitialization());
         stateMachine.Initialize(idleState);
+
         uiController = FindFirstObjectByType<UIController>();
+    }
+
+    private IEnumerator ResetAnimationSystem()
+    {
+        // 等待所有组件完全初始化
+        yield return new WaitForEndOfFrame();
+
+        // 完全重置动画系统
+        if (anim != null)
+        {
+            // 停止当前播放的所有动画
+            anim.StopPlayback();
+
+            // 重置所有参数
+            foreach (AnimatorControllerParameter param in anim.parameters)
+            {
+                if (param.type == AnimatorControllerParameterType.Bool)
+                    anim.SetBool(param.name, false);
+                else if (param.type == AnimatorControllerParameterType.Float)
+                    anim.SetFloat(param.name, 0f);
+                else if (param.type == AnimatorControllerParameterType.Int)
+                    anim.SetInteger(param.name, 0);
+            }
+
+            // 完全重绑定动画器
+            anim.Rebind();
+            anim.Update(0f);
+
+            Debug.Log("动画系统已完全重置");
+        }
+    }
+
+    private IEnumerator DelayedStateInitialization()
+    {
+        yield return null; // 等待一帧
+        stateMachine.Initialize(idleState);
     }
 
     protected override void Update()
     {
         base.Update();
+
+        //Debug.Log(stateMachine.currentState == null);
         stateMachine.currentState.Update();
 
         if (isHit)

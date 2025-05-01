@@ -11,11 +11,13 @@ public class PlayerJumpState : PlayerAirState
         base.Enter();
 
         player.rb.linearVelocity = new Vector2(player.rb.linearVelocityX, player.jumpForce);
+        AudioManager.Instance.PlaySFX("Jump");
     }
 
     public override void Exit()
     {
         base.Exit();
+        AudioManager.Instance.StopSFX("Jump");
     }
 
     public override void Update()

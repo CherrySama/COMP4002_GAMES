@@ -25,6 +25,8 @@ public class PlayerPrimaryAttack : PlayerState
 
         player.SetVelocity(player.attackMovement[comboCounter].x * Input.GetAxisRaw("Horizontal"), player.attackMovement[comboCounter].y);
 
+        AudioManager.Instance.PlaySFX("Attack");
+
         stateTimer = .1f;
         //Debug.Log(comboCounter);
     }
@@ -32,6 +34,8 @@ public class PlayerPrimaryAttack : PlayerState
     public override void Exit()
     {
         base.Exit();
+
+        AudioManager.Instance.StopSFX("Attack");
 
         player.StartCoroutine("BusyFor", .2f);
         player.anim.speed = 1.0f;

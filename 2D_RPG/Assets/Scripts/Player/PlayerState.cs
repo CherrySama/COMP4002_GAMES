@@ -21,6 +21,23 @@ public class PlayerState
 
     public virtual void Enter()
     {
+        //// 重置所有动画参数 - 这是关键修复
+        //player.anim.SetBool("Idle", false);
+        //player.anim.SetBool("Move", false);
+        //player.anim.SetBool("Jump", false);
+        //player.anim.SetBool("Attack", false);
+        //player.anim.SetBool("WallSlide", false);
+        //player.anim.SetBool("Dash", false);
+        //player.anim.SetBool("LadderClimb", false);
+        //player.anim.SetBool("LadderClimbFinish", false);
+        //player.anim.SetBool("Stun", false);
+        //player.anim.SetBool("Die", false);
+        //player.anim.SetBool("UI", false);
+
+        //// 强制清除动画缓存
+        //player.anim.Rebind();
+        //player.anim.Update(0f);
+
         player.anim.SetBool(animBoolName, true);
         triggerCalled = false;
         //Debug.Log("I enter " + animBoolName);
