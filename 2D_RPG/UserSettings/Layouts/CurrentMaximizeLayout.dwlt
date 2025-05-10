@@ -247,9 +247,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1ce50000
       m_LastClickedID: 0
-      m_ExpandedIDs: acaefcffbeaefcff3cb4fcffdac1fcffecc1fcff9cc7fcffa0cbfcff34d0fcff
+      m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 156
+  controlID: 136
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -1385,7 +1385,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Enemies
+    - Assets/Player
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1395,16 +1395,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Enemies
+  - Assets/Player
   m_LastFoldersGridSize: 53
   m_LastProjectPath: E:\myObj\COMP4002_Games\COMP4002_GAMES\2D_RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: fe210200
-    m_LastClickedID: 139774
-    m_ExpandedIDs: 0000000030de01009c2b02003e350200483f020000ca9a3b
+    scrollPos: {x: 0, y: 65}
+    m_SelectedIDs: b0dc0000
+    m_LastClickedID: 56496
+    m_ExpandedIDs: 0000000024dc0000acdc00001cdd000024dd00002add000032de0000a2e4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1433,7 +1433,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000024dc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1459,8 +1459,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 1ce50000
+    m_LastClickedInstanceID: 58652
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000fe910000c28f00004090000090e3000036e50000a6ba0000d4000100d6000100a6ce000040710100286a010078940100a29b01007c940100bec800001ac9000084bb00008c22010006cd000002e7000004e7000006e7000008e700000ae700000ce700001ee7000022e7000026e700002ae700002ee700001af6000046e700004ae700004ee7000052e7000036e7000032e700003ae700003ee7000042e70000d4f6000056e700005ae700005ee7000062e70000c2bb00000ec60000fce90000e8e2000080e2000044c6000054c30000e0110100a0920100a2920100a4920100a6920100a8920100aa920100ac920100ae920100fc920100fe9201000093010002930100049301000693010008930100f0920100f2920100f4920100ee920100ec920100ea920100e8920100c4bb000084b401007eb40100a8e00000c24f0100804f0100e6500100dcc60100aec60100045101004cc8010030c801001ec8010042c80100d050010020db010024db010028db01002cdb010030db010034db010038db01003cdb0100b2c50100ae4f010086c8010090c8010074c8010062c80100bc50010056c601000a410100ae40010006410100c8400100204101002c41010000000000caeb000064150100bcd30000
     m_RenameOverlay:

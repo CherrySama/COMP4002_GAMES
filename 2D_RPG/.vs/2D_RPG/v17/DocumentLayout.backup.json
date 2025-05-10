@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playerstunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playeruistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeruistate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\scene\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|e:\\myobj\\comp4002_games\\comp4002_games\\2d_rpg\\assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3C3029-E698-A56A-BB91-36396B7763EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,79 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerStunState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerStunState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStunState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerStunState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStunState.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBkAAAAsAAAAAAAAAA==",
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerState.cs",
+              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerState.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:41:21.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerJumpState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerJumpState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:40:24.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerUIState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerUIState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerUIState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerUIState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerUIState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:40:22.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerPrimaryAttack.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:40:20.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerMoveState.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMoveState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:40:17.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AudioManager.cs",
-              "DocumentMoniker": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Scene\\AudioManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Scene\\AudioManager.cs",
-              "ToolTip": "E:\\myObj\\COMP4002_Games\\COMP4002_GAMES\\2D_RPG\\Assets\\Scripts\\Scene\\AudioManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Scene\\AudioManager.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAAwNEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:39:04.161Z",
+              "WhenOpened": "2025-05-01T21:09:31.135Z",
               "EditorCaption": ""
             }
           ]
